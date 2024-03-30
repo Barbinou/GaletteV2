@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="66c1af2d-25eb-4040-90c1-54e29e97c6cc" name="Changes" comment="check">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercice3Graph.puml" beforeDir="false" afterPath="$PROJECT_DIR$/exercice3Graph.puml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="package-info" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="UML Sequence" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2dE1ZOkz6b9z1AaptlrzHzFMBhh" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.TestAll.executor": "Run",
+    "DefaultPlantUmlFileTemplate": "UML Sequence",
+    "JUnit.TestConcours.executor": "Run",
+    "JUnit.TestConcours.testConcourirGood.executor": "Run",
+    "JUnit.TestConcours.testConcourirGoodAvecSupporter.executor": "Run",
+    "JUnit.TestConcours.testConcourirPlusieursSupporter.executor": "Run",
+    "JUnit.TestConcours.testConcourirSupporter.executor": "Run",
+    "JUnit.TestGalettes.executor": "Run",
+    "JUnit.TestGourmand.testRechercheDeParts.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/vidalarnaud/IdeaProjects/GaletteV2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="C:\Users\Thibaut\Downloads\GaletteV2\src\main\java\allo" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="allo.fabrique" />
+      <recent name="allo.fabrique.galette" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.TestAll">
+    <configuration name="TestAll" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestAll" />
+      <module name="GaletteV2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestConcours.testConcourirGood" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GaletteV2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestConcours" />
+      <option name="METHOD_NAME" value="testConcourirGood" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestConcours.testConcourirGoodAvecSupporter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GaletteV2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestConcours" />
+      <option name="METHOD_NAME" value="testConcourirGoodAvecSupporter" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestConcours.testConcourirPlusieursSupporter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GaletteV2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestConcours" />
+      <option name="METHOD_NAME" value="testConcourirPlusieursSupporter" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestConcours.testConcourirSupporter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GaletteV2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestConcours" />
+      <option name="METHOD_NAME" value="testConcourirSupporter" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TestAll" />
+        <item itemvalue="JUnit.TestConcours.testConcourirGoodAvecSupporter" />
+        <item itemvalue="JUnit.TestConcours.testConcourirPlusieursSupporter" />
+        <item itemvalue="JUnit.TestConcours.testConcourirSupporter" />
+        <item itemvalue="JUnit.TestConcours.testConcourirGood" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.9-jbr-17.0.9-f644763e9732-e004e360" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="66c1af2d-25eb-4040-90c1-54e29e97c6cc" name="Changes" comment="" />
+      <created>1709558478876</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1709558478876</updated>
+      <workItem from="1709558479876" duration="288000" />
+      <workItem from="1709558779387" duration="7137000" />
+      <workItem from="1709566483492" duration="369000" />
+      <workItem from="1709566865448" duration="1982000" />
+      <workItem from="1709728369453" duration="91000" />
+      <workItem from="1710162613234" duration="3920000" />
+      <workItem from="1710335455634" duration="110000" />
+      <workItem from="1711817091067" duration="22000" />
+      <workItem from="1711817118778" duration="3334000" />
+      <workItem from="1711820467279" duration="2513000" />
+    </task>
+    <task id="LOCAL-00001" summary="check">
+      <option name="closed" value="true" />
+      <created>1711822060589</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1711822060589</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="check" />
+    <option name="LAST_COMMIT_MESSAGE" value="check" />
+  </component>
+</project>

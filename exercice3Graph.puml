@@ -1,0 +1,368 @@
+@startuml
+
+/' diagram meta data start
+config=StructureConfiguration;
+{
+  "projectClassification": {
+    "searchMode": "OpenProject", // OpenProject, AllProjects
+    "includedProjects": "",
+    "pathEndKeywords": "*.impl",
+    "isClientPath": "",
+    "isClientName": "",
+    "isTestPath": "",
+    "isTestName": "",
+    "isMappingPath": "",
+    "isMappingName": "",
+    "isDataAccessPath": "",
+    "isDataAccessName": "",
+    "isDataStructurePath": "",
+    "isDataStructureName": "",
+    "isInterfaceStructuresPath": "",
+    "isInterfaceStructuresName": "",
+    "isEntryPointPath": "",
+    "isEntryPointName": "",
+    "treatFinalFieldsAsMandatory": false
+  },
+  "graphRestriction": {
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "removeByInheritance": "", // inheritance/annotation based filtering is done in a second step
+    "removeByAnnotation": "",
+    "removeByClassPackage": "", // cleanup the graph after inheritance/annotation based filtering is done
+    "removeByClassName": "",
+    "cutMappings": false,
+    "cutEnum": true,
+    "cutTests": true,
+    "cutClient": true,
+    "cutDataAccess": false,
+    "cutInterfaceStructures": false,
+    "cutDataStructures": false,
+    "cutGetterAndSetter": true,
+    "cutConstructors": true
+  },
+  "graphTraversal": {
+    "forwardDepth": 6,
+    "backwardDepth": 6,
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "hideMappings": false,
+    "hideDataStructures": false,
+    "hidePrivateMethods": true,
+    "hideInterfaceCalls": true, // indirection: implementation -> interface (is hidden) -> implementation
+    "onlyShowApplicationEntryPoints": false, // root node is included
+    "useMethodCallsForStructureDiagram": "ForwardOnly" // ForwardOnly, BothDirections, No
+  },
+  "details": {
+    "aggregation": "GroupByClass", // ByClass, GroupByClass, None
+    "showClassGenericTypes": true,
+    "showMethods": true,
+    "showMethodParameterNames": true,
+    "showMethodParameterTypes": true,
+    "showMethodReturnType": true,
+    "showPackageLevels": 2,
+    "showDetailedClassStructure": true
+  },
+  "rootClass": "allo.Observable",
+  "extensionCallbackMethod": "" // qualified.class.name#methodName - signature: public static String method(String)
+}
+diagram meta data end '/
+
+
+
+digraph g {
+    rankdir="TB"
+    splines=polyline
+
+
+'nodes
+subgraph cluster_2996974 {
+   	label=allo
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+
+   Concours2996974[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Concours</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   fabrique: Fabrique [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   galettes: ArrayList&lt;Galette&gt; [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   listeMangeurs: ArrayList&lt;MangeurDeGalettes&gt; [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   nbGalette: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   nbMangeurs: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   observateurs: List&lt;Observateur&gt; [0..*]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ ajouterObservateur(o: Observateur)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ concourir(): MangeurDeGalettes</TD></TR>
+<TR><TD ALIGN="LEFT" >+ createConcours()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ enleverLesPerdants()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ nettoyerTable()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ notifierObservateurs()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Fabrique2996974[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Fabrique</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ cookGalette(): Galette</TD></TR>
+<TR><TD ALIGN="LEFT" >+ cookGalette(galetteOf: Class&lt;T&gt;): T</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+FabriqueChiante2996974[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)FabriqueChiante</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ cookGalette(): GaletteChiante</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+FabriqueFrangipane2996974[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)FabriqueFrangipane</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ cookGalette(): GaletteFrangipane</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+FabriqueLegere2996974[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)FabriqueLegere</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ cookGalette(): GaletteLegere</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+FabriquePistache2996974[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)FabriquePistache</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ cookGalette(): GalettePistache</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Galette2996974[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Galette</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   parts: ArrayList&lt;PartDeGalette&gt; [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   poidsGalette: int [1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ createGalette()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+GaletteChiante2996974[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)GaletteChiante</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+GaletteFrangipane2996974[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)GaletteFrangipane</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+GaletteLegere2996974[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)GaletteLegere</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+GalettePistache2996974[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)GalettePistache</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+MangeurDeGalettes2996974[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)MangeurDeGalettes</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   feve: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   poidsMange: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   poidsPeutMange: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   strategie: Stratego [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ manger(part: PartDeGalette)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ rechercheDeParts(galette: List&lt;Galette&gt;): PartDeGalette</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Observable2996974[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(I)Observable</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ ajouterObservateur(o: Observateur)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ notifierObservateurs()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#F1E5FD"
+];
+
+PartDeGalette2996974[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)PartDeGalette</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   feve: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   poids: int [1]</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+StrategieChiante2996974[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)StrategieChiante</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ rechercheDeParts(liste: List&lt;Galette&gt;): PartDeGalette</TD></TR>
+<TR><TD ALIGN="LEFT" >+ trouverGalette(liste: List&lt;Galette&gt;): List&lt;Galette&gt;</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+StrategieGourmand2996974[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)StrategieGourmand</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >- findMaxGalettePistache(liste: List&lt;Galette&gt;): PartDeGalette</TD></TR>
+<TR><TD ALIGN="LEFT" >- getGrossePart(liste: List&lt;Galette&gt;): PartDeGalette</TD></TR>
+<TR><TD ALIGN="LEFT" >+ rechercheDeParts(liste: List&lt;Galette&gt;): PartDeGalette</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+StrategieGourmet2996974[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)StrategieGourmet</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >- findFrangipaneListe(liste: List&lt;Galette&gt;): List&lt;Galette&gt;</TD></TR>
+<TR><TD ALIGN="LEFT" >- getPetitePart(liste: List&lt;Galette&gt;): PartDeGalette</TD></TR>
+<TR><TD ALIGN="LEFT" >+ rechercheDeParts(liste: List&lt;Galette&gt;): PartDeGalette</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Observateur2996974[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(I)Observateur</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ mettreAJour()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#F1E5FD"
+];
+
+Supporteur2996974[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="1" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Supporteur</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   nom: String [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ applaudit()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+}
+
+'edges
+Concours2996974 -> Fabrique2996974[label="fabrique
+[0..1]"];
+Concours2996974 -> Galette2996974[label="galettes
+[0..*]"];
+Concours2996974 -> MangeurDeGalettes2996974[label="listeMangeurs
+[0..*]"];
+Concours2996974 -> Supporteur2996974[arrowhead=none];
+Fabrique2996974 -> FabriqueChiante2996974[arrowhead=none, arrowtail=empty, dir=both];
+Fabrique2996974 -> FabriqueFrangipane2996974[arrowhead=none, arrowtail=empty, dir=both];
+Fabrique2996974 -> FabriqueLegere2996974[arrowhead=none, arrowtail=empty, dir=both];
+Fabrique2996974 -> FabriquePistache2996974[arrowhead=none, arrowtail=empty, dir=both];
+Galette2996974 -> GaletteChiante2996974[arrowhead=none, arrowtail=empty, dir=both];
+Galette2996974 -> GaletteFrangipane2996974[arrowhead=none, arrowtail=empty, dir=both];
+Galette2996974 -> GaletteLegere2996974[arrowhead=none, arrowtail=empty, dir=both];
+Galette2996974 -> GalettePistache2996974[arrowhead=none, arrowtail=empty, dir=both];
+Galette2996974 -> PartDeGalette2996974[label="parts
+[0..*]"];
+MangeurDeGalettes2996974 -> StrategieChiante2996974[arrowhead=none];
+MangeurDeGalettes2996974 -> StrategieGourmand2996974[arrowhead=none];
+MangeurDeGalettes2996974 -> StrategieGourmet2996974[arrowhead=none];
+Observable2996974 -> Concours2996974[arrowhead=none, arrowtail=empty, dir=both];
+Supporteur2996974 -> Observateur2996974[arrowhead=none, arrowtail=empty, dir=both];
+}
+@enduml
