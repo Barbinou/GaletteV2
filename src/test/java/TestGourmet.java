@@ -14,9 +14,10 @@ public class TestGourmet {
     @Test
     public void testFeve() {
         MangeurDeGalettes mangeurDeGalettes = new MangeurDeGalettes(500, new StrategieGourmet());
-        Galette galette = new GaletteFrangipane(2000);
-        galette.createGalette();
-        PartDeGalette part = galette.getParts().get(0);
+        Galette galetteBase = new Galette(500);
+        Galette galetteFrangipane = new GaletteFrangipane(galetteBase);
+        galetteFrangipane.createGalette();
+        PartDeGalette part = galetteFrangipane.getParts().get(0);
         part.setFeve(true);
         mangeurDeGalettes.manger(part);
         assert mangeurDeGalettes.isFeve();
@@ -25,11 +26,12 @@ public class TestGourmet {
     @Test
     public void testRechercheDePart() {
         MangeurDeGalettes gourmet = new MangeurDeGalettes(500, new StrategieGourmet());
-        Galette galette = new GaletteFrangipane(2000);
-        galette.createGalette();
-        PartDeGalette partATrouver = galette.getParts().get(0);
+        Galette galetteBase = new Galette(500);
+        Galette galetteFrangipane = new GaletteFrangipane(galetteBase);
+        galetteFrangipane.createGalette();
+        PartDeGalette partATrouver = galetteFrangipane.getParts().get(0);
         partATrouver.setPoids(0);
-        PartDeGalette part = gourmet.rechercheDeParts(List.of(galette));
+        PartDeGalette part = gourmet.rechercheDeParts(List.of(galetteFrangipane));
         assertEquals(partATrouver, part);
     }
 }

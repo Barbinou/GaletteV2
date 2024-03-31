@@ -5,9 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66c1af2d-25eb-4040-90c1-54e29e97c6cc" name="Changes" comment="check">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercice3Graph.puml" beforeDir="false" afterPath="$PROJECT_DIR$/exercice3Graph.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercice3.png" beforeDir="false" afterPath="$PROJECT_DIR$/exercice3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/allo/Concours.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/allo/Concours.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/allo/Fabrique.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/allo/FabriqueChiante.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/allo/FabriqueFrangipane.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/allo/FabriqueLegere.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/allo/FabriquePistache.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/allo/Galette.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/allo/Galette.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/allo/GaletteChiante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/allo/GaletteChiante.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/allo/GaletteFrangipane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/allo/GaletteFrangipane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/allo/GaletteLegere.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/allo/GaletteLegere.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/allo/GalettePistache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/allo/GalettePistache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/allo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/allo/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestConcours.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestConcours.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestGalettes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestGalettes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestGourmand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestGourmand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestGourmet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestGourmet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +35,8 @@
         <option value="Enum" />
         <option value="package-info" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="UML Sequence" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -32,6 +47,9 @@
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2dE1ZOkz6b9z1AaptlrzHzFMBhh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -46,8 +64,14 @@
     "JUnit.TestConcours.testConcourirGoodAvecSupporter.executor": "Run",
     "JUnit.TestConcours.testConcourirPlusieursSupporter.executor": "Run",
     "JUnit.TestConcours.testConcourirSupporter.executor": "Run",
+    "JUnit.TestConcours.testNettoyerTable.executor": "Run",
     "JUnit.TestGalettes.executor": "Run",
+    "JUnit.TestGalettes.testGaletteLegere.executor": "Run",
+    "JUnit.TestGalettes.testGalettePistache.executor": "Run",
+    "JUnit.TestGourmand.executor": "Run",
+    "JUnit.TestGourmand.testFeve.executor": "Run",
     "JUnit.TestGourmand.testRechercheDeParts.executor": "Run",
+    "JUnit.TestGourmet.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -64,7 +88,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -79,7 +103,20 @@
       <recent name="allo.fabrique.galette" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestAll">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="allo.Main" />
+      <module name="GaletteV2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="allo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestAll" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TestAll" />
       <module name="GaletteV2" />
@@ -87,53 +124,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestConcours.testConcourirGood" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestConcours" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GaletteV2" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestConcours" />
-      <option name="METHOD_NAME" value="testConcourirGood" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestConcours.testNettoyerTable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GaletteV2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestConcours" />
+      <option name="METHOD_NAME" value="testNettoyerTable" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestConcours.testConcourirGoodAvecSupporter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestGourmet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GaletteV2" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestConcours" />
-      <option name="METHOD_NAME" value="testConcourirGoodAvecSupporter" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestConcours.testConcourirPlusieursSupporter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GaletteV2" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestConcours" />
-      <option name="METHOD_NAME" value="testConcourirPlusieursSupporter" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestConcours.testConcourirSupporter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GaletteV2" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestConcours" />
-      <option name="METHOD_NAME" value="testConcourirSupporter" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="TestGourmet" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.TestAll" />
-        <item itemvalue="JUnit.TestConcours.testConcourirGoodAvecSupporter" />
-        <item itemvalue="JUnit.TestConcours.testConcourirPlusieursSupporter" />
-        <item itemvalue="JUnit.TestConcours.testConcourirSupporter" />
-        <item itemvalue="JUnit.TestConcours.testConcourirGood" />
+        <item itemvalue="JUnit.TestConcours" />
+        <item itemvalue="JUnit.TestConcours.testNettoyerTable" />
+        <item itemvalue="JUnit.TestGourmet" />
       </list>
     </recent_temporary>
   </component>
@@ -162,6 +187,9 @@
       <workItem from="1711817091067" duration="22000" />
       <workItem from="1711817118778" duration="3334000" />
       <workItem from="1711820467279" duration="2513000" />
+      <workItem from="1711823235907" duration="482000" />
+      <workItem from="1711823931601" duration="425000" />
+      <workItem from="1711920390467" duration="3612000" />
     </task>
     <task id="LOCAL-00001" summary="check">
       <option name="closed" value="true" />
@@ -178,6 +206,9 @@
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
     <MESSAGE value="check" />
     <option name="LAST_COMMIT_MESSAGE" value="check" />
   </component>

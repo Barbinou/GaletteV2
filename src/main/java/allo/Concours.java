@@ -10,7 +10,6 @@ import java.util.Random;
 @Getter
 @Setter
 public class Concours implements Observable{
-    private final Fabrique fabrique = null;
     protected int nbMangeurs, nbGalette;
     protected ArrayList<MangeurDeGalettes> listeMangeurs = new ArrayList<>();
     private List<Observateur> observateurs = new ArrayList<>();
@@ -37,12 +36,12 @@ public class Concours implements Observable{
 
     public void createConcours(){
         for (int i = 0; i < getNbGalette(); i++) {
-            Galette galette = null;
+            Galette galette = new Galette(500);
             switch (random.nextInt(4)) {
-                case 0 -> galette = new GaletteChiante(1500);
-                case 1 -> galette = new GalettePistache(2500);
-                case 2 -> galette = new GaletteFrangipane(2000);
-                case 3-> galette = new GaletteLegere(500);
+                case 0 -> galette = new GaletteChiante(galette);
+                case 1 -> galette = new GalettePistache(galette);
+                case 2 -> galette = new GaletteFrangipane(galette);
+                case 3-> galette = new GaletteLegere(galette);
             }
 
             galette.createGalette();

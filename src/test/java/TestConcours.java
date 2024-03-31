@@ -9,8 +9,9 @@ public class TestConcours {
     @Test
     public void testNettoyerTable(){
         Concours concours = new Concours(10, 0);
-        Galette galette = new GaletteFrangipane(0);
-        Galette galetteLaVrai = new GaletteFrangipane(2500);
+        Galette galette = new Galette(0);
+        Galette galetteBase = new Galette(500);
+        Galette galetteLaVrai = new GalettePistache(galetteBase);
         concours.getGalettes().add(galette);
         concours.getGalettes().add(galetteLaVrai);
         concours.nettoyerTable();

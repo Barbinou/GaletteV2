@@ -8,7 +8,7 @@ import java.util.Random;
 
 @Getter
 @Setter
-public abstract class Galette {
+public class Galette {
     protected ArrayList<PartDeGalette> parts = new ArrayList<PartDeGalette>();
     protected int poidsGalette;
 
@@ -19,13 +19,18 @@ public abstract class Galette {
     public void createGalette(){
         int limites = 0;
         while (limites < getPoidsGalette()){
-            //int poidsAleatoire = new Random().nextInt(150, 251);
             int poidsAleatoire = new Random().nextInt(251 - 150) + 150;
             this.parts.add(new PartDeGalette(poidsAleatoire, false));
             limites += poidsAleatoire;
         }
         this.parts.add(new PartDeGalette( limites - getPoidsGalette(), false));
         this.parts.get(new Random().nextInt(parts.size() - 1)).setFeve(true);
+    }
+
+    public void setPoidsGalette(int poids) {
+        poidsGalette = poids;
+        parts.clear();
+        createGalette();
     }
 
     public boolean isEmpty() {
