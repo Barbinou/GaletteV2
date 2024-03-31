@@ -4,26 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66c1af2d-25eb-4040-90c1-54e29e97c6cc" name="Changes" comment="check">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercice3.png" beforeDir="false" afterPath="$PROJECT_DIR$/exercice3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/allo/Concours.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/allo/Concours.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/allo/Fabrique.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/allo/FabriqueChiante.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/allo/FabriqueFrangipane.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/allo/FabriqueLegere.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/allo/FabriquePistache.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/allo/Galette.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/allo/Galette.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/allo/GaletteChiante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/allo/GaletteChiante.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/allo/GaletteFrangipane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/allo/GaletteFrangipane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/allo/GaletteLegere.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/allo/GaletteLegere.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/allo/GalettePistache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/allo/GalettePistache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/allo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/allo/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestConcours.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestConcours.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestGalettes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestGalettes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestGourmand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestGourmand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestGourmet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestGourmet.java" afterDir="false" />
-    </list>
+    <list default="true" id="66c1af2d-25eb-4040-90c1-54e29e97c6cc" name="Changes" comment="ya du changement ma gueule" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -189,7 +170,7 @@
       <workItem from="1711820467279" duration="2513000" />
       <workItem from="1711823235907" duration="482000" />
       <workItem from="1711823931601" duration="425000" />
-      <workItem from="1711920390467" duration="3612000" />
+      <workItem from="1711920390467" duration="4251000" />
     </task>
     <task id="LOCAL-00001" summary="check">
       <option name="closed" value="true" />
@@ -199,7 +180,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711822060589</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ya du changement ma gueule">
+      <option name="closed" value="true" />
+      <created>1711924026365</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1711924026365</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,6 +199,7 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="check" />
-    <option name="LAST_COMMIT_MESSAGE" value="check" />
+    <MESSAGE value="ya du changement ma gueule" />
+    <option name="LAST_COMMIT_MESSAGE" value="ya du changement ma gueule" />
   </component>
 </project>
