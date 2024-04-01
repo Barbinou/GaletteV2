@@ -8,7 +8,7 @@ import java.util.Random;
 
 @Getter
 @Setter
-public class Galette {
+public abstract class Galette {
     protected ArrayList<PartDeGalette> parts = new ArrayList<PartDeGalette>();
     protected int poidsGalette;
 

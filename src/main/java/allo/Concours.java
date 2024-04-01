@@ -36,7 +36,7 @@ public class Concours implements Observable{
 
     public void createConcours(){
         for (int i = 0; i < getNbGalette(); i++) {
-            Galette galette = new Galette(500);
+            Galette galette = new GaletteBase(500);
             switch (random.nextInt(4)) {
                 case 0 -> galette = new GaletteChiante(galette);
                 case 1 -> galette = new GalettePistache(galette);

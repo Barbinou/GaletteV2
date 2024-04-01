@@ -1,8 +1,4 @@
-import allo.Galette;
-import allo.GaletteFrangipane;
-import allo.PartDeGalette;
-import allo.MangeurDeGalettes;
-import allo.StrategieGourmet;
+import allo.*;
 import org.junit.Test;
 
 import java.util.List;
@@ -14,7 +10,7 @@ public class TestGourmet {
     @Test
     public void testFeve() {
         MangeurDeGalettes mangeurDeGalettes = new MangeurDeGalettes(500, new StrategieGourmet());
-        Galette galetteBase = new Galette(500);
+        Galette galetteBase = new GaletteBase(500);
         Galette galetteFrangipane = new GaletteFrangipane(galetteBase);
         galetteFrangipane.createGalette();
         PartDeGalette part = galetteFrangipane.getParts().get(0);
@@ -26,7 +22,7 @@ public class TestGourmet {
     @Test
     public void testRechercheDePart() {
         MangeurDeGalettes gourmet = new MangeurDeGalettes(500, new StrategieGourmet());
-        Galette galetteBase = new Galette(500);
+        Galette galetteBase = new GaletteBase(500);
         Galette galetteFrangipane = new GaletteFrangipane(galetteBase);
         galetteFrangipane.createGalette();
         PartDeGalette partATrouver = galetteFrangipane.getParts().get(0);
